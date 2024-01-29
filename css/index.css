@@ -102,7 +102,7 @@ span.hovered_img {
     margin-right: auto;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 10px;
     text-align: center;
 }
 
