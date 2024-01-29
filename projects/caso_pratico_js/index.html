@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="???">
+        <meta name="keywords" content="rss, portfolio">
+        <meta name="author" content="Luís">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/2996c63a72.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <nav class="first">
+                <label for="hideShow" class="hideShow">Menu</label>
+                <input type="checkbox" role="button" id="hideShow">
+                <ul class="menu-grid">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#formOrc">Pedir Orçamento</a></li>
+                    <li><a href="#" id="portfolio">Portfolio</a></li>
+                    <li><a href="contactos.html" target="_self">Contactos</a></li>
+                </ul>
+            </nav>
+
+            <div class="second">
+                <ul id="banner">
+                    <li>#Um website único</li>
+                    <li>#Estimativa imediata</li>
+                    <li>#Portólio para inspiração</li>
+                    <li>#Reunião em pessoa</li>
+                </ul>
+                <img alt="" src="images/banner.png"/>
+            </div>
+
+            <div class="third">
+                <div class="news">
+                    <div class="rss">
+                        <h3 id="rssTitle">notícias</h3>
+                        <a href="#" onclick="load(url1)">Web Design Ledger</a>
+                        <a href="#" onclick="load(url2)">Web Designer Depot</a>
+                        <a href="#" onclick="load(url3)">Envato Tuts</a>
+                        <a href="#" onclick="load(url4)">Specky Boy</a>
+                        <a href="#" onclick="load(url5)">Design Shack</a>
+                        <a href="#" onclick="load(url6)">CSS Tricks</a>
+                    </div>
+                    <div id="box"></div>
+                    <div class="info">
+                        <ul>
+                            <li>Múltiplas opções para separadores</li>
+                            <li>Cada separador a 400€</li>
+                            <li>Confirmação de orçamento em 48h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="galleryContainer" id="gallery">
+                    <div class="subcontainer" id="subcontainer">
+                        <div class="grid" id="grid">
+                            <img class="img" src="images/image1.jpg"></img>
+                            <img class="img" src="images/image2.jpg"></img>
+                            <img class="img" src="images/image3.jpg"></img>
+                            <img class="img" src="images/image2.jpg"></img>
+                            <img class="img" src="images/image4.jpg"></img>
+                            <img class="img" src="images/image5.jpg"></img>
+                            <img class="img" src="images/image3.jpg"></img>
+                            <img class="img" src="images/image1.jpg"></img>
+                            <img class="img" src="images/image2.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fourth" id="formOrc">
+                <form name="orcamento" method="POST" id="orcamento">
+                    <h4>Dados</h4>
+                    Nome: <input name="nome" type="text" value=""/><br/>
+                    Apelido: <input name="apelido" type="text" value=""/><br/>
+                    Telemóvel: <input name="telemovel" type="text" value=""/><br/>
+
+                    <h4>Pedido de Orçamento</h4>
+                    Tipo de página: <select id="" name="base">
+                        <option value="200">Basic</option>
+                        <option value="250">Total</option>
+                        <option value="300">Plus</option>
+                        <option value="350">Premium</option>
+                    </select><br/>
+                    Prazo em meses: <input name="prazo" type="text" value=""/><br/>
+
+                    <h5>Separadores desejados</h5>
+                    Quem somos <input name="quemSomos" type="checkbox" value=""/>
+                    Onde estamos <input name="ondeEstamos" type="checkbox" value=""/><br/>
+                    Galeria <input name="galeria" type="checkbox" value=""/>
+                    eCommerce <input name="eCommerce" type="checkbox" value=""/><br/>
+                    Gestão Interna<input name="gestaoInterna" type="checkbox" value=""/>
+                    Notícias <input name="noticias" type="checkbox" value=""/><br/>
+                    Redes Sociais <input name="redesSociais" type="checkbox" value=""/>
+
+                    <h5>Estimativa<br>(valor indicativo)</h5>
+                    <input name="estimativa" type="text" value="" disabled id="estimativa"/><br/>
+                    <input name="enviar" type="button" value="Enviar"/>
+                </form>
+            </div>
+
+            <footer class="fifth">
+                <a href="https://www.facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
+
+                <a href="https://www.instagram.com" target="blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com" target="blank"><i class="fa-brands fa-twitter"></i></a>
+            </footer>
+
+        </div>
+
+        </div>
+        <script src="javascript/rss.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guess my Book</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A private library where you can see my books, passages I like and test your own literary knowledge">
+    <meta name="keywords" content="literature, private library, guess, game, knowledge">
+    <meta name="author" content="Luís">
+    <!-- <meta name="robots" content="nofollow"> -->
+    <script src="https://kit.fontawesome.com/2996c63a72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="229075.css">
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img class="pic1" alt="library" src="imagens/library.jpg">
+        <h1 class="title">Guess<br>my<br>Book</h1>
+        <img class="pic2" alt="library" src="imagens/library.jpg">
+      </div>
+    </header>
+
+    <section>
+      <nav>
+        <div class="maindiv">
+          <a href="index.html">Home</a>
+          <div class="insidediv active selected">
+            Famous Excerpt <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <a href="home_famous.html" class="margin1">Famous Excerpt</a>
+              <a href="home_mypick.html" class="margin2">My Pick </a>
+            </div>
+          </div>
+          <div class="insidediv active selected">
+            Adventure <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <a href="home_adventure.html" class="margin3" id="drp2">Adventure</a>
+              <a href="home_scifi.html" class="margin4" id="drp3">Science Fiction</a>
+              <a href="#" class="margin5 drp4">Fantasy</a>
+              <a href="#" class="margin4 drp4">Horror</a>
+              <a href="#" class="margin5 drp4">Nonfiction</a>
+            </div>
+          </div>
+          <div class="insidediv gamegenre">
+            Summary/Reviews <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <a href="https://www.cliffsnotes.com/literature/m/mobydick/book-summary" target="blank" class="margin6" id="drp3">Summary</a>
+              <a href="https://www.goodreads.com/book/show/58419189-moby-dick" target="blank" class="margin7" id="drp3">Reviews</a>
+              <a href="https://www.bookdepository.com/Moby-Dick-Herman-Melville/9781847496447?ref=grid-view&qid=1665582940600&sr=1-29" target="blank" class="margin5" id="drp3">Get one</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <article>
+        <div class="leftdiv">
+          <div class="uncover2"><span class="help">HELP:</span> Browse the library
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/mobydick.jpg">
+              <img src="imagens/mobydick.jpg" alt="Moby-Dick"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/doandroids.jpg">
+              <img src="imagens/doandroids.jpg" alt="Do Androids Dreams of Electric Sheep"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/thefountainhead.jpg">
+              <img src="imagens/thefountainhead.jpg" alt="The Fountainhead"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/faust.jpeg">
+              <img src="imagens/faust.jpeg" alt="Faust"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/crimeandpunishment.jpg">
+              <img src="imagens/crimeandpunishment.jpg" alt="Crime and Punishment"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/aniara.jpeg">
+              <img src="imagens/aniara.jpeg" alt="Aniara"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/zarathustra.jpg">
+              <img src="imagens/zarathustra.jpg" alt="Thus Spake Zarathustra"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/dersteppenwolf.jpg">
+              <img src="imagens/dersteppenwolf.jpg" alt="Der Steppenwolf"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/odyssey.jpeg">
+              <img src="imagens/odyssey.jpeg" alt="The Odyssey of Homer"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/humanaction.jpg">
+              <img src="imagens/humanaction.jpg" alt="Human Action"></a>
+          </div>
+          <div class="galeria">
+            <a target="_blank" href="imagens/machineryoffreedom.jpg">
+              <img src="imagens/machineryoffreedom.jpg" alt="The Machinery of Freedom"></a>
+          </div>
+        </div>
+        <div class="middiv">
+          <p class="middivtxt">Call me Ishmael. Some years ago- never mind how long precisely- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off- then, I account it high time to get to sea as soon as I can. This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the ship. There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.</p>
+          <div class="stickyanswer">
+            <p class="sticky2">I know!:</p>
+            <form class="sticky2">
+              <input type="radio" id="adventure" name="genre" value="adventure">
+              <label for="adventure">Adventure</label>
+              <input type="radio" id="sci-fi" name="genre" value="sci-fi">
+              <label for="sci-fi">Science Fiction</label>
+              <input type="radio" id="fantasy" name="genre" value="fantasy">
+              <label for="fantasy">Fantasy</label>
+              <input class="stickyanswer" type="text" name="obra" id="obra" value="" placeholder="Title">
+              <input class="button" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        <div class="rightdiv">
+          <div class="uncover2"><span class="help">Give up?</span>
+            Peak at the cover</div>
+          <div class="adventure1">
+            <div class="incover_drop"></div>
+            <div class="incover_drop"></div>
+            <div class="incover_drop"></div>
+            <div class="incover_drop"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div class="ftr">
+        <div class="social_media"><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://twitter.com/" target="blank"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div><i><a href="mailto:luismpcunha@posteo.net">luismpcunha@posteo.net</a></i></div>
+      </div>
+    </footer>
+  </body>
+</html>

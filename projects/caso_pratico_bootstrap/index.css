@@ -1,0 +1,64 @@
+@font-face {
+    font-family: futur;
+    src: url("fonts/FUTRFW.TTF");
+}
+
+a.dropdown-item {
+    text-align: center;
+}
+
+.card-img-overlay .list-group .list-group-item {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card-img-overlay .list-group .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-title {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+}
+
+a:link, a:visited, p a:hover, li a:hover {
+    color: rgb(222, 221, 218);
+    text-decoration: none;
+}
+
+#color {
+    color: green;
+}
+
+.carousel-caption {
+    top: 0;
+}
+
+.card-title {
+    bottom: 0;
+}
+
+.tab-content {
+    overflow-y: scroll;
+    height: 15rem;
+}
+
+a.nav-link.disabled {
+    pointer-events: none;
+}
+
+.carousel-caption {
+    font-family: futur, sans-serif;
+}
+
+.ftr {
+    padding: 0.5em 0em;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.ftr a, .ftr a:hover {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}

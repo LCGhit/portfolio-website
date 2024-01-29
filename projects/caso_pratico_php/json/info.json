@@ -1,0 +1,38 @@
+[
+    {
+        "nome":"<h4>Empresa 1</h4>",
+        "features":"<ul><li>Página simples com produtos para consulta e contactos</li><li>Cinco separadores</li><li>Design moderno</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 2</h4>",
+        "features":"<ul><li>Consulta de serviços</li><li>Calendário para marcações online</li><li>Contacto através da página</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 3</h4>",
+        "features":"<ul><li>Apresentação da empresa</li><li>Navegação por categorias de atividade</li><li>Contactos e redirecionamentos</li><li>Mudança dinâmica de fotografias</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 4</h4>",
+        "features":"<ul><li>Compras à distância de um clique</li><li>Atualização diária de sugestão de produtos</li><li>Navegação intuitiva</li><li>Design atrativo</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 5</h4>",
+        "features":"<ul><li>Criação de contas de cliente</li><li>Personalização de cada conta</li><li>Consulta do histórico de atividade</li><li>Popup para upgrade premium</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 6</h4>",
+        "features":"<ul><li>Modo noturno</li><li>Temas consoante o separador</li><li>Galeria de fotos</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 7</h4>",
+        "features":"<ul><li>Apresentação da empresa</li><li>Navegação por categorias de atividade</li><li>Contactos e redirecionamentos</li><li>Mudança dinâmica de fotografias</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 8</h4>",
+        "features":"<ul><li>Página simples com produtos para consulta e contactos</li><li>Cinco separadores</li><li>Design moderno</li></ul>"
+    },
+    {
+        "nome":"<h4>Empresa 9</h4>",
+        "features":"<ul><li>Compras à distância de um clique</li><li>Atualização diária de sugestão de produtos</li><li>Navegação intuitiva</li><li>Design atrativo</li></ul>"
+    }
+]

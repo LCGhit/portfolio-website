@@ -1,0 +1,327 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(255, 252, 240);
+}
+
+body {
+    font-family: arial;
+    scroll-behaviour: smooth;
+}
+
+/* ========
+.CONTAINER
+======== */
+
+.first {grid-area: menu;}
+.second {grid-area: header;}
+.third {grid-area: main;}
+.fourth {grid-area: form;}
+.fifth {grid-area: footer;}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'menu menu menu menu'
+        'header header header header'
+        'main main main main'
+        'form form form form'
+        'footer footer footer footer';
+    padding: 10px;
+    gap: 10px;
+}
+
+/* ========
+MENU
+======== */
+.first {
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hideShow {
+    display: none;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(230, 230, 255);
+    background-color: rgb(0, 153, 112);
+    padding: 1em 0em;
+}
+
+input[id="hideShow"] {
+    display: none;
+}
+
+input[id="hideShow"]:checked ~ .menu-grid {
+    display: block;
+}
+
+@media screen and (max-width : 760px) {
+    .menu-grid {
+        /* display: grid; */
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: repeat(4, 1fr); */
+        display: none;
+    }
+
+    ul li, li a {
+        width: 100%;
+    }
+
+    .hideShow {
+        display: block;
+    }
+
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 5px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(230, 230, 255);
+    background-color: rgb(0, 153, 112);
+    padding: 1em 0em;
+}
+
+li:nth-child(4) a {
+    border-radius: 0% 0% 40% 0%;
+}
+
+li:nth-child(1) a {
+    border-radius: 40% 0% 0% 0%;
+}
+
+li a:hover {
+    color: white;
+    background-color: rgb(0, 179, 143);
+}
+
+/* ========
+HEADER
+======== */
+.second {
+    background-color: rgb(255, 51, 51);
+}
+
+@font-face {
+    font-family: newfont;
+    src: url(../fonts/font.ttf);
+}
+
+#banner {
+    display: inline-block;
+    font-size: 1.3em;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-right: 0;
+    font-family: newfont;
+    color: rgb(245, 245, 183);
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    margin-top: 70px;
+    line-height: 1.2em;
+}
+
+img {
+    display: inline-block;
+    float: right;
+}
+
+/* ========
+CENTER
+======== */
+.third {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.news {
+    display: grid;
+    grid-template-areas:
+        'sidebar newscontent newscontent info'
+    ;
+}
+
+.info {
+    grid-area: info;
+}
+
+.info ul {
+    list-style-type: none;
+    display: block;
+    max-width: 200px;
+}
+
+.info ul li {
+    font-size: 1em;
+    display: block;
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    font-weight: 600;
+    padding: 1.2em;
+    margin: 1em 0;
+    font-style: italic;
+    border-radius: 100%;
+    background-color: rgb(255, 204, 0);
+}
+
+.rss {
+    font-size: 0.6em;
+    grid-area: sidebar;
+    text-align: center;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.rss a {
+    display: block;
+    text-decoration: none;
+    color: rgb(242, 242, 242);
+    font-weight: 600;
+    background-color: rgb(33, 33, 33);
+    padding: 1.2em;
+}
+
+.rss a:hover {
+    color: rgb(0, 128, 85);
+}
+
+h3 {
+    color: rgb(92, 138, 138);
+}
+
+#rssTitle {
+    font-size: 1.5em;
+    color: black;
+}
+
+#box {
+    grid-area: newscontent;
+    padding: 3em;
+    background-color: rgba(163, 163, 117, 0.2);
+    margin: 2%;
+    overflow-x: hidden;
+}
+
+/* ========
+FORM
+======== */
+.fourth {
+    line-height: 2;
+    text-align: center;
+    margin-left: 50%;
+    background-color: rgb(194, 214, 214);
+    border-radius: 6% 6% 0 0;
+    transform: translate(-50%);
+}
+
+.fourth#estimativa {
+    text-align: center;
+}
+
+/* ========
+FOOTER
+======== */
+.fifth {
+    text-align: center;
+    color: rgb(56, 56, 56);
+    font-size: 1.3em;
+    bottom: 0;
+    background: linear-gradient(rgba(51, 102, 153, 0.2), white);
+    padding: 0.2em 0em;
+}
+
+.fifth i {
+    color: rgb(56, 56, 56);
+    padding: 0em 1em;
+}
+
+.fifth i:hover {
+    color: rgb(240, 96, 0);
+}
+
+/* ==========
+   LIGHTBOX
+   ========== */
+.galleryContainer {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    overflow-x: hidden;
+    grid-gap: 1em;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin: auto;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    width: 30%;
+    height: auto;
+}
+
+.lightP {
+    color: white;
+    margin: 2em;
+    max-width: 400px;
+}
+
+#lightbox ul {
+    list-style: inside;
+    list-style-type: circle;
+    margin: 0;
+    line-height: 1.5em;
+    padding: 0;
+}
+
+#lightbox h4 {
+    margin-bottom: 0;
+}
