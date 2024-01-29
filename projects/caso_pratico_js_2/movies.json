@@ -1,0 +1,97 @@
+[
+    {
+        "name" : "Blue Velvet",
+        "info" : {"year" : "1986", "language" : "English", "director" : "David Lynch"},
+        "description" : "The discovery of a severed human ear found in a field leads a young man on an investigation related to a beautiful, mysterious nightclub singer and a group of psychopathic criminals who have kidnapped her child."
+    },
+
+    {
+        "name" : "Bram Stocker's Dracula",
+        "info" : {"year" : "1992", "language" : "English", "director" : "Francis Ford Coppola"},
+        "description" : "The centuries old vampire Count Dracula comes to England to seduce his barrister Jonathan Harker's fiancée Mina Murray and inflict havoc in the foreign land."
+    },
+
+    {
+        "name" : "Ex Machina",
+        "info" : {"year" : "2014", "language" : "English", "director" : "Alex Garland"},
+        "description" : "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I."
+    },
+
+    {
+        "name" : "Kwaidan",
+        "info" : {"year" : "1964", "language" : "Japanese", "director" : "Masaki Kobayashi"},
+        "description" : "A collection of four Japanese folk tales with supernatural themes."
+    },
+
+    {
+        "name" : "L'Avventura",
+        "info" : {"year" : "1960", "language" : "Italian", "director" : "Michelangelo Antonioni"},
+        "description" : "A woman disappears during a Mediterranean boating trip. During the search, her lover and her best friend become attracted to each other."
+    },
+
+    {
+        "name" : "Lawrence of Arabia",
+        "info" : {"year" : "1962", "language" : "English", "director" : "David Lean"},
+        "description" : "The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks."
+    },
+
+    {
+        "name" : "Memories of Murder",
+        "info" : {"year" : "2003", "language" : "Korean", "director" : "Bong Joon Ho"},
+        "description" : "In a small Korean province in 1986, two detectives struggle with the case of multiple young women being found raped and murdered by an unknown culprit."
+    },
+
+    {
+        "name" : "Moon",
+        "info" : {"year" : "2009", "language" : "English", "director" : "Duncan Jones"},
+        "description" : "Astronaut Sam Bell has a quintessentially personal encounter toward the end of his three-year stint on the Moon, where he, working alongside his computer, GERTY, sends back to Earth parcels of a resource that has helped diminish our planet's power problems."
+    },
+
+    {
+        "name" : "Nosferatu",
+        "info" : {"year" : "1922", "language" : "Silent", "director" : "F.W. Murnau"},
+        "description" : "Vampire Count Orlok expresses interest in a new residence and real estate agent Hutter's wife."
+    },
+
+    {
+        "name" : "Nymphomaniac",
+        "info" : {"year" : "2013", "language" : "English", "director" : "Lars von Trier"},
+        "description" : "A self-diagnosed nymphomaniac recounts her erotic experiences to the man who saved her after a beating."
+    },
+
+    {
+        "name" : "Ran",
+        "info" : {"year" : "1985", "language" : "Japanese", "director" : "Akira Kurosawa"},
+        "description" : "In Medieval Japan, an elderly warlord retires, handing over his empire to his three sons. However, he vastly underestimates how the new-found power will corrupt them and cause them to turn on each other...and him."
+    },
+
+    {
+        "name" : "Repúlsion",
+        "info" : {"year" : "1965", "language" : "English", "director" : "Roman Polanski"},
+        "description" : "A sex-repulsed woman who disapproves of her sister's boyfriend sinks into depression and has horrific visions of rape and violence."
+    },
+
+    {
+        "name" : "Solaris",
+        "info" : {"year" : "1972", "language" : "Russian/German", "director" : "Andrei Tarkovsky"},
+        "description" : "A psychologist is sent to a station orbiting a distant planet in order to discover what has caused the crew to go insane."
+    },
+
+    {
+        "name" : "Through a Glass Darkly",
+        "info" : {"year" : "1961", "language" : "Swedish", "director" : "Ingmar Bergman"},
+        "description" : "Recently released from a mental hospital, Karin rejoins her emotionally disconnected family in their island home, only to slip from reality as she begins to believe she is being visited by God."
+    },
+
+    {
+        "name" : "The Tree of Life",
+        "info" : {"year" : "2011", "language" : "English", "director" : "Terrence Malick"},
+        "description" : "The story of a family in Waco, Texas in 1956. The eldest son witnesses the loss of innocence and struggles with his parents' conflicting teachings."
+    },
+
+    {
+        "name" : "Valerie and Her Week of Wonders",
+        "info" : {"year" : "1970", "language" : "Czech", "director" : "Jaromil Jires"},
+        "description" : "Surreal tale in which love, fear, sex and religion merge into one fantastic world, based on a classical Czech novel of the same title."
+    }
+]

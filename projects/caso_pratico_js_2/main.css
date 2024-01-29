@@ -1,0 +1,374 @@
+/* ==========
+   LIGHTBOX
+   ========== */
+.container {
+    width: auto;
+    margin: auto;
+    display: none;
+}
+
+.subcontainer {
+    width: 90%;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.img {
+    width: auto;
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img:nth-child(1) {
+    background-image: url(images/image1.jpg);
+}
+
+.img:nth-child(2) {
+    background-image: url(images/image2.jpg);
+}
+
+.img:nth-child(3) {
+    background-image: url(images/image3.png);
+}
+
+.img:nth-child(4) {
+    background-image: url(images/image4.jpg);
+}
+
+.img:nth-child(5) {
+    background-image: url(images/image5.jpg);
+}
+
+.img:nth-child(6) {
+    background-image: url(images/image6.png);
+}
+
+.img:nth-child(7) {
+    background-image: url(images/image7.jpg);
+}
+
+.img:nth-child(8) {
+    background-image: url(images/image8.png);
+}
+
+.img:nth-child(9) {
+    background-image: url(images/image9.jpg);
+}
+
+.img:nth-child(10) {
+    background-image: url(images/image10.png);
+}
+
+.img:nth-child(11) {
+    background-image: url(images/image11.jpg);
+}
+
+.img:nth-child(12) {
+    background-image: url(images/image12.jpg);
+}
+
+.img:nth-child(13) {
+    background-image: url(images/image13.jpg);
+}
+
+.img:nth-child(14) {
+    background-image: url(images/image14.jpg);
+}
+
+.img:nth-child(15) {
+    background-image: url(images/image15.jpg);
+}
+
+.img:nth-child(16) {
+    background-image: url(images/image16.jpg);
+}
+
+.img {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* ==========
+   .grid-container
+   ========== */
+.first { grid-area: menu; }
+.second { grid-area: header; }
+.third { grid-area: main; }
+.fourth { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'menu menu menu menu menu menu'
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    gap: 10px;
+    padding: 10px;
+}
+
+/* ==========
+   HEADER
+   ========== */
+header {
+    background-image: url("images/header.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    padding: 0rem 1.5rem;
+    color: white;
+    font-family: arial;
+    display: inline-block;
+}
+
+/* ==========
+   MENU
+   ========== */
+.menugrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    /* position: absolute; */
+}
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+
+.dailySuggestion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.title {
+    background-color: rgb(255, 162, 236);
+    color: rgb(45, 45, 45);
+    font-family: arial;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.2rem;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#keywords {
+    grid-column: 1 / 5;
+    font-family: Arial;
+    font-size: 0.9rem;
+}
+
+#keywords span {
+    background-color: rgb(255, 255, 153);
+}
+
+.dailyImg {
+    grid-column: 1 / 3;
+    grid-row: 3 / 7;
+    margin: 0.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.description {
+    grid-column: 3 / 5;
+    grid-row: 3 / 7;
+    background-color: rgb(222, 221, 218);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.source {
+    font-style: italic;
+    direction: rtl;
+}
+
+.mark {
+    background-color: rgb(65, 65, 65);
+    border: none;
+    padding: 1rem 1rem;
+    margin: 10px 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: white;
+    border-radius: 8px;
+}
+
+.mark:hover {
+
+    cursor: pointer;
+    background-color: rgba(65, 65, 65, 0.9);
+}
+
+.mtitle {
+    visibility: visible;
+    color: rgb(255, 214, 255);
+    font-family: arial;
+    font-weight: bold;
+    background-color: rgb(54, 54, 54, 0.5);
+    width: auto;
+    max-width: 80%;
+    margin-left: 1rem;
+}
+
+/* ==========
+   FOOTER
+   ========== */
+footer {
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(64, 64, 64);
+}
+
+footer a {
+    color: rgb(137, 143, 255);
+    padding: 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    .menugrid {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dailySuggestion {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(10, 1fr);
+    }
+
+    .title {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #keywords {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .dailyImg {
+        grid-column: 1 / 3;
+        grid-row: 3 / 7;
+    }
+
+    .description {
+        grid-column: 1 / 3;
+        grid-row: 7 / 9;
+    }
+
+    .mark {
+        grid-column: 1 / 3;
+        grid-row: 9 / 10;
+    }
+}

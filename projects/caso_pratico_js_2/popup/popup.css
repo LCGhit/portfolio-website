@@ -1,0 +1,52 @@
+body {
+    font-family: arial;
+    color: white;
+    background-color: rgb(86, 110, 136);
+    text-align: center;
+}
+
+h1 {
+    margin: 50px;
+}
+
+h4 {
+    margin: 50px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+form {
+    margin: 50px;
+}
+
+#submit {
+    border: 10px solid white;
+    height: 40px;
+    color: gray;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+.input {
+    display: inline-block
+}
+
+#close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(86, 110, 136, 0);
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+}
+
+#close:hover {
+    cursor: pointer;
+}

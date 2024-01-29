@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Mail</title>
+        <link rel="stylesheet" href="popup.css">
+        <script type="text/javaScript">
+         function checkBlank(form) {
+             var valid = 's';
+             var message = '';
+
+             if (form.anEmail.value == '') {
+                 message = message + 'The field cannot be empty \n';
+                 valid = 'n';
+             }
+
+             var email = /^(.+\@.+\..+)$/;
+             if(!email.test(form.anEmail.value)) {
+                 valid = 'n';
+                 message = message + 'Invalid email \n';
+             }
+
+             if (valid == 's') {
+                 alert('Thank you!');
+                 form.submit();
+                 window.close();
+             }
+             else {
+                 alert(message);
+             }
+         }
+        </script>
+    </head>
+    <body>
+        <input id="close" type="button" value="Close" onClick="window.close()"/>
+        <h1>Keep up with us</h1>
+        <h2>Write your mail and it's all set</h2>
+        <form name="test" method="POST">
+            <h3>Email: <input name="anEmail" type="text" value="" placeholder="write your email"></h3>
+            <input id="submitBTN" name="" type="button" value="Submit" onClick="checkBlank(this.form)"/>
+        </form>
+    </body>
+</html>

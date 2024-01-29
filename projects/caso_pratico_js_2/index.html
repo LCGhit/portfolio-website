@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="???">
+        <meta name="keywords" content="plan, movie, cinema, location">
+        <meta name="author" content="Luís">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+
+        <link rel="stylesheet" href="main.css">
+        <link href="lightbox.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/2996c63a72.js" crossorigin="anonymous"></script>
+        <script src="lightbox-plus-jquery.js"></script>
+    </head>
+    <body>
+        <div class="grid-container">
+            <nav class="first">
+                <label for="show-menu" class="show-menu">Show Menu</label>
+                <input type="checkbox" id="show-menu" role="button">
+                <ul id="menu" class="menugrid">
+                    <li>
+                        <a href="#">Sort by ￬</a>
+                        <ul class="hidden">
+                            <li><a href="#" id="galleryWatched">Watched</a></li>
+                            <li><a href="#" id="galleryNotWatched">Not watched</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="randomize">Suggestion</a></li>
+                    <li><a href="#" id="showImgs">Toggle Gallery</a></li>
+                </ul>
+            </nav>
+            <header class="second">
+                <h1>your movies</h1>
+            </header>
+            <article class="third">
+                <div class="dailySuggestion">
+                    <div class="title"><div class="smth"></div></div>
+                    <h3 id="keywords"><span>keywords:</span></h3>
+                    <span id="randomImg" class="dailyImg" alt="random movie image"></span>
+                    <div class="description"><p id="about"></p><p class="source">from imdb.com</p></div>
+
+                    <span><input class="mark" id="markWatched" type="button" value="watched"></input></span>
+                    <Span><input class="mark" id="markNotWatched" type="button" value="not watched"></input></span>
+                </div>
+                <div class="container" id="gallery">
+                    <div class="subcontainer">
+                        <div class="grid">
+                            <a class="img" href="images/image1.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image2.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image3.png" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image4.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image5.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image6.png" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image7.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image8.png" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image9.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image10.png" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image11.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image12.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image13.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image14.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image15.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                            <a class="img" href="images/image16.jpg" data-title="movies" data-lightbox="movies-image">
+                                <p class="mtitle"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="fourth">
+                <a href="https://www.facebook.com" target="blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </footer>
+        </div>
+        <script type="text/javaScript" src="main.js"></script>
+    </body>
+</html>
