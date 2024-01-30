@@ -222,8 +222,8 @@ $(document).ready( function() {
         newWindow = window.open('popup/popup.html', 'test', 'width=500,height=500,status=no,toolbar=no,top=300,left=300');
     }
 
-    setTimeout(() => {
-        openWindow();
-    }, "3000");
+    // setTimeout(() => {
+    //     openWindow();
+    // }, "3000");
 
 });
