@@ -57,6 +57,7 @@ header {
     color: rgb(232, 232, 232);
     font-family: arkMedium;
     margin: 1em 1em;
+    word-wrap: break-word;
 }
 
 #embed_site {
@@ -149,4 +150,9 @@ footer {
         grid-template-columns: 1fr;
         grid-gap: 1em;
     }
+
+    header {
+        font-size: .6em;
+    }
+
 }
