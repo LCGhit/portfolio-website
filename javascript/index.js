@@ -34,12 +34,12 @@ $(document).ready(function() {
     }
 
     $.each($(".click_to_embed"), function(key, value) {
-        $(value).on("mouseenter touchstart", function() {
+        $(value).bind("mouseenter touchstart", function() {
             $(value).children("img").eq(0).css("opacity", "0.6");
             getProjInfo($(value).index());
         });
 
-        $(value).on("mouseleave touchend", ".hovered_img", function() {
+        $(value).bind("mouseleave touchend", ".hovered_img", function() {
             $(".hovered_img").remove();
             $(value).children("img").eq(0).css("opacity", "1");
         });
