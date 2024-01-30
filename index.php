@@ -15,7 +15,7 @@
     <body>
         <nav></nav>
         <header>
-            <h1>portfolio of websites</h1>
+            <h1>portfolio of websites - ongoing development</h1>
         </header>
         <article>
             <div id="embed_site">
