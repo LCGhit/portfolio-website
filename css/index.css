@@ -130,6 +130,7 @@ footer {
 }
 
 #contact_email {
+    margin-left: .5em;
     transition-duration: .4s;
     color: rgb(232, 232, 232);
     font-family: contact;
