@@ -124,4 +124,5 @@ if($_SESSION['logArray']['usertype'] === 'admin') {
             include "appointments.php";
         }
         ?>
-        <script src="javascript/edit_client.js"></script>
+        <script src="../javascript/edit_client.js"></script>
+        <script src="../javascript/users_tab.js"></script>

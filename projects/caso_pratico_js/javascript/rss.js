@@ -3,10 +3,10 @@
   ==== */
 var url1 = 'https://css-tricks.com/feed/';
 var url2 = 'https://www.webdesignerdepot.com/feed/';
-var url3 = 'https://webdesign.tutsplus.com/posts.atom';
+var url3 = 'https://feeds2.feedburner.com/tympanus';
 var url4 = 'https://speckyboy.com/feed/';
 var url5 = 'https://designshack.net/feed/';
-var url6 = 'https://feeds.feedburner.com/CssTricks';
+var url6 = 'https://davidwalsh.name/feed';
 
 function load(feed) {
     $.ajax({

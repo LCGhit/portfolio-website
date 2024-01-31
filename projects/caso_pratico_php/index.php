@@ -163,7 +163,6 @@ session_start();
         </div>
         <!-- ////////////////////USERS TAB//////////////////// -->
         <script type="text/javascript" src="javascript/rss.js"></script>
-        <script type="text/javascript" src="javascript/users_tab.js"></script>
     </body>
 
 </html>
