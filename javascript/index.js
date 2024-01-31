@@ -10,7 +10,11 @@ $(document).ready(function() {
                 $(".hovered_img").remove();
                 var output = "";
                 for (i in projInfo[n]) {
-                    output = output + "</br>"+i+"_ "+projInfo[n][i];
+                    if (projInfo[n][i] != "") {
+                        output = output + "</br>"+i+"_ "+projInfo[n][i];
+                    } else {
+                        continue;
+                    }
                 }
                 $("<span class='hovered_img'>"+output+"</span>").insertBefore($("img.project_"+(n+1)));
             }

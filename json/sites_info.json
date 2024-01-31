@@ -1,31 +1,31 @@
 [
     {
-        "project#":"first project",
+        "project#":"01",
         "focus":"HTML, CSS",
         "notes": ""
     },
     {
-        "project#":"second project",
+        "project#":"02",
         "focus":"Bootstrap",
         "notes": ""
     },
     {
-        "project#":"third project",
+        "project#":"03",
         "focus":"JavaScript",
         "notes": ""
     },
     {
-        "project#":"fourth project",
+        "project#":"04",
         "focus":"JavaScript",
         "notes": ""
     },
     {
-        "project#":"fifth project",
+        "project#":"05",
         "focus":"PHP, MySQL",
         "notes": ""
     },
     {
-        "project#":"sixth project",
+        "project#":"06",
         "focus":"real business website",
         "notes": ""
     }
