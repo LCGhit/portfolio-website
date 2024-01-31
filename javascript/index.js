@@ -8,7 +8,10 @@ $(document).ready(function() {
             if(this.status == 200) {
                 var projInfo = JSON.parse(this.responseText);
                 $(".hovered_img").remove();
-                var output = '</br>'+projInfo[n].name;
+                var output = "";
+                for (i in projInfo[n]) {
+                    output = output + "</br>"+i+"_ "+projInfo[n][i];
+                }
                 $("<span class='hovered_img'>"+output+"</span>").insertBefore($("img.project_"+(n+1)));
             }
             else if (this.status == 404) {
