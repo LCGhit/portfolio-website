@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>dev-bound - home</title>
         <link href="css/index.css" rel="stylesheet"/>
-        <link href="" rel="shortcut icon"/>
+        <link href="#" rel="shortcut icon"/>
+        <link href="#" rel="icon"/>
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <script src="javascript/index.js"></script>
     </head>
