@@ -1,6 +1,6 @@
 @font-face {
-    font-family: futur;
-    src: url("fonts/FUTRFW.TTF");
+    font-family: proto;
+    src: url("fonts/Prototype.ttf");
 }
 
 a.dropdown-item {
@@ -47,7 +47,8 @@ a.nav-link.disabled {
 }
 
 .carousel-caption {
-    font-family: futur, sans-serif;
+    font-family: proto, sans-serif;
+    font-size: 1.5em;
 }
 
 .ftr {
