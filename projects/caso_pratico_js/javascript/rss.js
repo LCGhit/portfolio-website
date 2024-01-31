@@ -1,7 +1,7 @@
 /* ====
   RSS
   ==== */
-var url1 = 'https://webdesignledger.com/feed/';
+var url1 = 'https://css-tricks.com/feed/';
 var url2 = 'https://www.webdesignerdepot.com/feed/';
 var url3 = 'https://webdesign.tutsplus.com/posts.atom';
 var url4 = 'https://speckyboy.com/feed/';
