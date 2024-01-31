@@ -34,7 +34,7 @@ session_start();
                     <li>#Portólio para inspiração</li>
                     <li>#Reunião em pessoa</li>
                 </ul>
-                <img alt="" src="images/banner.png"/>
+                <img alt="desktop and mobile screens graphics with bullet points regarding the point of the site" src="images/banner.png"/>
             </div>
 
             <div class="third">

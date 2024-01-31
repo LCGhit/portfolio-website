@@ -1,34 +1,4 @@
 /* ====
-  RSS
-  ==== */
-// var url1 = 'https://webdesignledger.com/feed/';
-// var url2 = 'https://www.webdesignerdepot.com/feed/';
-// var url3 = 'https://webdesign.tutsplus.com/posts.atom';
-// var url4 = 'https://speckyboy.com/feed/';
-// var url5 = 'https://designshack.net/feed/';
-// var url6 = 'https://feeds.feedburner.com/CssTricks';
-
-// function load(feed) {
-//     $.ajax({
-//         url : "https://api.rss2json.com/v1/api.json?rss_url=" + feed,
-//         type : 'GET',
-//         success : function(data) {
-//             objeto_json = eval(data);
-//             var sentence = "";
-//             for (i = 0; i < objeto_json.items.length && i < 3; i++) {
-//                 number = i+1;
-//                 sentence = sentence + "<h3>"  + number + ": " + objeto_json.items[i].title +  "</h3>" + "<br/><br/>";
-//                 sentence = sentence + objeto_json.items[i].description + "<hr><br/><br/>";
-//             }
-//             $("#box").html(sentence);
-//         },
-//         error : function(xhr, status) {
-//             alert('Ocorreu um erro');
-//         }
-//     });
-// }
-
-/* ====
   NEW RSS
   ==== */
 dbNews = function(n) {
@@ -115,7 +85,7 @@ const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox);
 
-const images = document.querySelectorAll('img');
+const images = document.querySelectorAll('.img');
 images.forEach(image => {
     image.addEventListener('click', function() {
         lightbox.classList.add('active');
