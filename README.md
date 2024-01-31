@@ -10,6 +10,7 @@ A portfolio of websites, from the very first one, with pure HTML and CSS, to mor
 You need only clone the repository and change the $host, $user and $pass variables according to your own server setup in the following files:
 1) projects/final_project/includes/connection.php
 2) projects/caso_pratico_php/users_tab/connect.php
+3) projects/caso_pratico_php/users_tab/changes.php
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
