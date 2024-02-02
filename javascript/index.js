@@ -46,13 +46,15 @@ $(document).ready(function() {
             getProjInfo($(value).index());
         });
 
-        $(value).bind("mouseleave touchend touchcancel click", ".hovered_img", function() {
+        $(value).bind("mouseleave touchend touchcancel", ".hovered_img", function() {
             $(".hovered_img").remove();
             $(value).children("img").eq(0).css("opacity", "1");
         });
 
         $(value).on("click", function() {
             showSite($(value).children("img").eq(0));
+            $(".hovered_img").remove();
+            $(value).children("img").eq(0).css("opacity", "1");
         });
     });
 
