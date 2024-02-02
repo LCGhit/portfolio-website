@@ -14,6 +14,15 @@
         <script src="javascript/index.js"></script>
     </head>
     <body>
+        <!-- not displayed by default -->
+        <div id="embeds">
+            <embed class="embeded_site project_1" src="projects/caso_pratico_html_css/index.html">
+            <embed class="embeded_site project_2" src="projects/caso_pratico_bootstrap/index.html">
+            <embed class="embeded_site project_3" src="projects/caso_pratico_js_2/index.html">
+            <embed class="embeded_site project_4" src="projects/caso_pratico_js/index.html">
+            <embed class="embeded_site project_5" src="projects/caso_pratico_php/index.php">
+            <embed class="embeded_site project_6" src="projects/final_project/index.php">
+        </div>
         <nav></nav>
         <header>
             <h1>portfolio of websites - ongoing development</h1>
@@ -26,16 +35,6 @@
                 <div class="click_to_embed"><img class="project_4" alt="dynamic website about movies incorporating javascript" src="images/caso_pratico_js.png"/></div>
                 <div class="click_to_embed"><img class="project_5" alt="previous web developer services website incorporating php and mysql" src="images/caso_pratico_php.png"/></div>
                 <div class="click_to_embed"><img class="project_6" alt="small business website featuring a shopping cart, sign in and sign up, and database for user and product info" src="images/final_project.png"/></div>
-            </div>
-
-            <!-- not displayed by default -->
-            <div id="embeds">
-                <embed class="embeded_site project_1" src="projects/caso_pratico_html_css/index.html">
-                <embed class="embeded_site project_2" src="projects/caso_pratico_bootstrap/index.html">
-                <embed class="embeded_site project_3" src="projects/caso_pratico_js_2/index.html">
-                <embed class="embeded_site project_4" src="projects/caso_pratico_js/index.html">
-                <embed class="embeded_site project_5" src="projects/caso_pratico_php/index.php">
-                <embed class="embeded_site project_6" src="projects/final_project/index.php">
             </div>
         </article>
         <footer>

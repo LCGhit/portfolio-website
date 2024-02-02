@@ -31,13 +31,13 @@ $(document).ready(function() {
 
     function showSite(element) {
         var sharedClass = element.attr("class");
-        $("embed."+sharedClass).css("display", "block");
-        $("#embeds").show("medium");
+        $("#embeds").css({"display":"flex"});
+        $("embed."+sharedClass).css({"display":"block", "width":"70vw"});
     }
 
     function hideSite(element) {
-        element.css("display", "none");
-        $("#embeds").hide("medium");
+        $("#embeds").css({"display":"none"});
+        element.css({"display":"none", "width":"0vw"});
     }
 
     $.each($(".click_to_embed"), function(key, value) {
@@ -46,7 +46,7 @@ $(document).ready(function() {
             getProjInfo($(value).index());
         });
 
-        $(value).bind("mouseleave touchend", ".hovered_img", function() {
+        $(value).bind("mouseleave touchend click", ".hovered_img", function() {
             $(".hovered_img").remove();
             $(value).children("img").eq(0).css("opacity", "1");
         });
