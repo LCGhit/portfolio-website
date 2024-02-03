@@ -81,7 +81,7 @@ span.hovered_img {
     align-items: center;
     justify-content: center;
     position: absolute;
-    z-index: 3;
+    z-index: 0;
     color: rgb(232, 232, 232);
     margin-left: auto;
     margin-right: auto;

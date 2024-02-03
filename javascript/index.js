@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 
     $.each($(".embeded_site"), function(key, value) {
-        $("#embeds").on("click", function(event) {
+        $("#embeds").on("click", function() {
             hideSite($(value));
         });
     });
