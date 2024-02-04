@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    // retrieve projects' name and technologies
     getProjInfo = function(n) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'json/sites_info.json', true);
@@ -8,14 +9,8 @@ $(document).ready(function() {
             if(this.status == 200) {
                 var projInfo = JSON.parse(this.responseText);
                 $(".hovered_img").remove();
-                var output = "";
-                for (i in projInfo[n]) {
-                    if (projInfo[n][i] != "") {
-                        output = output + "</br>"+i+"_ "+projInfo[n][i];
-                    } else {
-                        continue;
-                    }
-                }
+                var output = Object.keys(projInfo[n])[0]+"_ "+Object.values(projInfo[n])[0]+"</br>"+Object.keys(projInfo[n])[1]+"_ "+Object.values(projInfo[n])[1];
+
                 $("<span class='hovered_img'>"+output+"</span>").insertBefore($("img.project_"+(n+1)));
             }
             else if (this.status == 404) {
@@ -28,6 +23,8 @@ $(document).ready(function() {
         };
         xhr.send();
     };
+
+
 
     function showSite(element) {
         var sharedClass = element.attr("class");

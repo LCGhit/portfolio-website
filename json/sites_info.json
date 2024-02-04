@@ -2,31 +2,37 @@
     {
         "project#":"01",
         "focus":"HTML, CSS",
-        "notes": ""
+        "notes": "",
+        "src":"projects/caso_pratico_html_css/index.html"
     },
     {
         "project#":"02",
         "focus":"Bootstrap",
-        "notes": ""
+        "notes": "",
+        "src":"projects/caso_pratico_bootstrap/index.html"
     },
     {
         "project#":"03",
         "focus":"JavaScript",
-        "notes": ""
+        "notes": "",
+        "src":"projects/caso_pratico_js_2/index.html"
     },
     {
         "project#":"04",
         "focus":"JavaScript",
-        "notes": ""
+        "notes": "",
+        "src":"projects/caso_pratico_js/index.html"
     },
     {
         "project#":"05",
         "focus":"PHP, MySQL",
-        "notes": ""
+        "notes": "",
+        "src":"projects/caso_pratico_php/index.php"
     },
     {
         "project#":"06",
         "focus":"real business website",
-        "notes": ""
+        "notes": "",
+        "src":"projects/final_project/index.php"
     }
 ]
