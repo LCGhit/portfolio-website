@@ -24,17 +24,38 @@ $(document).ready(function() {
         xhr.send();
     };
 
+    getSrc = function(n) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'json/sites_info.json', true);
+
+        xhr.onload = function() {
+            if(this.status == 200) {
+                var projSrc = JSON.parse(this.responseText);
+                $("#embeds").append("<embed class='embeded_site' src='"+projSrc[n]["src"]+"'/>");
+                $("embed.embeded_site").css({"display":"block", "width":"70vw"});
+            }
+            else if (this.status == 404) {
+                $("#embeds").append("<embed class='embeded_site'>project not found");
+            }
+        };
+
+        xhr.onerror = function() {
+            console.log('Request error');
+        };
+        xhr.send();
+    };
 
 
-    function showSite(element) {
-        var sharedClass = element.attr("class");
+    function showSite(index) {
         $("#embeds").css({"display":"flex"});
-        $("embed."+sharedClass).css({"display":"block", "width":"70vw"});
+        getSrc(index);
     }
 
     function hideSite(element) {
         $("#embeds").css({"display":"none"});
         element.css({"display":"none", "width":"0vw"});
+        $(".embeded_site").remove();
+
     }
 
     $.each($(".click_to_embed"), function(key, value) {
@@ -49,18 +70,15 @@ $(document).ready(function() {
         });
 
         $(value).on("click", function() {
-            showSite($(value).children("img").eq(0));
+            showSite($(value).index());
             $(".hovered_img").remove();
             $(value).children("img").eq(0).css("opacity", "1");
         });
     });
 
 
-
-    $.each($(".embeded_site"), function(key, value) {
-        $("#embeds").on("click", function() {
-            hideSite($(value));
-        });
+    $("#embeds").on("click", function() {
+        hideSite($(".embeded_site"));
     });
 
 

@@ -14,14 +14,7 @@
         <script src="javascript/index.js"></script>
     </head>
     <body>
-        <!-- not displayed by default -->
         <div id="embeds">
-            <embed class="embeded_site project_1" src="projects/caso_pratico_html_css/index.html">
-            <embed class="embeded_site project_2" src="projects/caso_pratico_bootstrap/index.html">
-            <embed class="embeded_site project_3" src="projects/caso_pratico_js_2/index.html">
-            <embed class="embeded_site project_4" src="projects/caso_pratico_js/index.html">
-            <embed class="embeded_site project_5" src="projects/caso_pratico_php/index.php">
-            <embed class="embeded_site project_6" src="projects/final_project/index.php">
         </div>
         <nav></nav>
         <header>
