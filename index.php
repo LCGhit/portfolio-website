@@ -19,6 +19,9 @@
             <h1>portfolio of websites - ongoing development</h1>
         </header>
         <div id="siteInfoWrap">
+            <div id="timeline">
+                &#8203
+            </div>
             <aside id="further_proj_info">
                 Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum, odio eu! Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh?
                 Risus sed vulputate odio ut enim blandit volutpat? Tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus?
