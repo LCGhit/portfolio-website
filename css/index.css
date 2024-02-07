@@ -138,6 +138,7 @@ span.hovered_img {
   background-color: white;
   border: 4px solid rgb(0, 173, 112);
   top: 0;
+  left: -130%;
   border-radius: 50%;
   z-index: 1;
 }
