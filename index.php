@@ -18,9 +18,11 @@
         <header>
             <h1>portfolio of websites - ongoing development</h1>
         </header>
+        <div id="embeds">
+        </div>
         <div id="siteInfoWrap">
             <div id="timeline">
-            <button class="timestamp"></button>
+                <button class="timestamp"></button>
             </div>
             <aside id="further_proj_info">
                 Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum, odio eu! Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh?
@@ -29,8 +31,7 @@
                 Sit amet purus gravida quis blandit turpis. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa, eget egestas purus viverra accumsan in nisl nisi, scelerisque eu ultrices vitae.
             </aside>
             <article>
-                <div id="embeds">
-                </div>
+
                 <div id="embed_site">
                     <div class="click_to_embed"><img class="project_1" alt="pure html and css based website with literary guessing game" src="images/caso_pratico_html_css.png"/></div>
                     <div class="click_to_embed"><img class="project_2" alt="a music band webpage based on bootstrap" src="images/caso_pratico_bootstrap.png"/></div>
