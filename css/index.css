@@ -126,10 +126,11 @@ span.hovered_img {
 #timeline {
     display: flex;
     justify-content: center;
-    width: 1rem;
+    width: .7rem;
     margin: 0 1rem;
     padding: -.8rem;
     background-color: rgb(234, 234, 234);
+    border-radius: 70px;
 }
 
 .timestamp {
