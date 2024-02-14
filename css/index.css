@@ -124,8 +124,10 @@ span.hovered_img {
 }
 
 #timeline {
+    padding: 1em 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     width: 1rem;
     margin: 0 1rem;
     padding: -.8rem;
