@@ -145,7 +145,8 @@ span.hovered_img {
 }
 
 aside {
-    width: 20%;
+    display: none;
+    width: 0;
     border-right: 1rem solid rgb(0, 173, 112);
     box-shadow: .3rem 2px 2px rgb(25, 25, 25);
     background-color: rgb(234, 234, 234);
