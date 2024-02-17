@@ -26,6 +26,8 @@
                 <button class="timestamp"></button>
                 <button class="timestamp"></button>
                 <button class="timestamp"></button>
+                <button class="timestamp"></button>
+                <button class="timestamp"></button>
             </div>
             <aside id="further_proj_info">
                 Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum, odio eu! Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh?

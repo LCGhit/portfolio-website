@@ -76,10 +76,15 @@ $(document).ready(function() {
         });
     });
 
-
     $("#embeds").on("click", function() {
         hideSite($(".embeded_site"));
     });
 
+    // timeline hover simulates effect of project image hover
+    $.each($(".timestamp"), function(key, value) {
+        $(value).bind("mouseenter touchstart", function(){
+            console.log($(".click_to_embed").eq($(value).index()));
+        });
+    });
 
 });
