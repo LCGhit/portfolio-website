@@ -48,7 +48,7 @@
             </article>
         </div>
         <footer>
-            <a id="contact_email" href="mailto:luispcunha@proton.me">luispcunha@proton.me</a>
+            <a id="contact_email" href="mailto:luispcunha@proton.me">info@dev-bound.com</a>
         </footer>
     </body>
 </html>
