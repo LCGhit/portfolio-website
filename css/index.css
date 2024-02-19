@@ -128,7 +128,8 @@ span.hovered_img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1rem;
+    align-items: center;
+    width: .8rem;
     margin: 0 1rem;
     padding: -.8rem;
     background-color: rgb(234, 234, 234);
