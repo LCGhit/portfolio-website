@@ -24,7 +24,7 @@ $(document).ready(function() {
         xhr.send();
     };
 
-    getSrc = function(n) {
+    getProjectUrl = function(n) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'json/sites_info.json', true);
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
     function showSite(index) {
         $("#embeds").css({"display":"flex"});
-        getSrc(index);
+        getProjectUrl(index);
     }
 
     function hideSite(element) {
@@ -83,7 +83,9 @@ $(document).ready(function() {
     // timeline hover simulates effect of project image hover
     $.each($(".timestamp"), function(key, value) {
         $(value).bind("mouseenter touchstart", function(){
-            console.log($(".click_to_embed").eq($(value).index()));
+            equatedProject = $(".click_to_embed").eq($(value).index());
+            equatedProject.children("img").eq(0).css("opacity", "0.6");
+            getProjInfo(equatedProject.index());
         });
     });
 
