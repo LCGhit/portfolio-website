@@ -87,6 +87,12 @@ $(document).ready(function() {
             equatedProject.children("img").eq(0).css("opacity", "0.6");
             getProjInfo(equatedProject.index());
         });
+        $(value).bind("mouseleave touchend", function() {
+            equatedProject = $(".click_to_embed").eq($(value).index());
+            $(".hovered_img").remove();
+            equatedProject.children("img").eq(0).css("opacity", "1");
+        });
+
     });
 
 });
