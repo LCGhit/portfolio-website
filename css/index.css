@@ -145,6 +145,10 @@ span.hovered_img {
     z-index: 1;
 }
 
+.timestamp:hover {
+    background-color: rgb(74, 74, 74);
+}
+
 aside {
     display: none;
     width: 0;
