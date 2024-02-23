@@ -93,6 +93,13 @@ $(document).ready(function() {
             equatedProject.children("img").eq(0).css("opacity", "1");
         });
 
+        $(value).on("click", function() {
+            equatedProject = $(".click_to_embed").eq($(value).index());
+            showSite(equatedProject.index());
+            $(".hovered_img").remove();
+            equatedProject.children("img").eq(0).css("opacity", "1");
+        });
+
     });
 
 });
