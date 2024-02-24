@@ -67,6 +67,12 @@ header {
     position: relative;
 }
 
+.click_to_embed:hover .timestamp {
+    background-color: rgb(74, 74, 74);
+    transition-duration: .4s;
+    border-color: rgb(234, 234, 234);
+}
+
 .click_to_embed img {
     background-color: white;
     width: 100%;
