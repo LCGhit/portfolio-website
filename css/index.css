@@ -195,4 +195,7 @@ footer {
         font-size: .6em;
     }
 
+    #timeline {
+        display: none;
+    }
 }
