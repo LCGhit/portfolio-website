@@ -98,6 +98,19 @@ span.hovered_img {
     font-family: arkMedium;
 }
 
+.site_more_info {
+    font-family: contact;
+    background-color: rgba(232, 232, 232, .6);
+    padding: .2rem;
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.site_more_info:hover {
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+}
+
 #embeds {
     display: none;
     z-index: 3;
