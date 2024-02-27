@@ -9,7 +9,7 @@ $(document).ready(function() {
             if(this.status == 200) {
                 var projInfo = JSON.parse(this.responseText);
                 $(".hovered_img").remove();
-                var output = Object.keys(projInfo[n])[0]+"_ "+Object.values(projInfo[n])[0]+"</br>"+Object.keys(projInfo[n])[1]+"_ "+Object.values(projInfo[n])[1]+"<br/><button class=site_more_info>more info</button>";
+                var output = "<p>"+Object.keys(projInfo[n])[0]+"_ "+Object.values(projInfo[n])[0]+"</p>"+"<p>"+Object.keys(projInfo[n])[1]+"_ "+Object.values(projInfo[n])[1]+"<p/><button class=site_more_info>more info</button>";
 
                 $("<span class='hovered_img'>"+output+"</span>").insertBefore($("img.project_"+(n+1)));
             }

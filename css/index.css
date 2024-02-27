@@ -84,11 +84,13 @@ header {
 span.hovered_img {
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 1;
     color: rgb(232, 232, 232);
+    line-height: .1em;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -165,6 +167,7 @@ span.hovered_img {
 }
 
 .timestamp:hover {
+    cursor: pointer;
     background-color: rgb(74, 74, 74);
     transition-duration: .4s;
     border-color: rgb(234, 234, 234);
