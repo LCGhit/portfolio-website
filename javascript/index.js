@@ -58,30 +58,26 @@ $(document).ready(function() {
 
     }
 
-    $.each($(".click_to_embed"), function(key, value) {
-        $(value).bind("mouseenter touchstart", function() {
-            $(value).children("img").eq(0).css("opacity", "0.6");
-            getProjInfo($(value).index());
-        });
+    // $.each($(".click_to_embed"), function(key, value) {
+    //     $(value).bind("mouseenter touchstart", function() {
+    //         $(value).children("img").eq(0).css("opacity", "0.6");
+    //         getProjInfo($(value).index());
+    //     });
 
-        $(value).bind("mouseleave touchend", function() {
-            $(".hovered_img").remove();
-            $(value).children("img").eq(0).css("opacity", "1");
-        });
+    //     $(value).bind("mouseleave touchend", function() {
+    //         $(".hovered_img").remove();
+    //         $(value).children("img").eq(0).css("opacity", "1");
+    //     });
 
-        $(value).on("click", function() {
-            showSite($(value).index());
-            $(".hovered_img").remove();
-            $(value).children("img").eq(0).css("opacity", "1");
-        });
-    });
-
-    $("#embeds").on("click", function() {
-        hideSite($(".embeded_site"));
-    });
+    //     $(value).on("click", function() {
+    //         showSite($(value).index());
+    //         $(".hovered_img").remove();
+    //         $(value).children("img").eq(0).css("opacity", "1");
+    //     });
+    // });
 
     // timeline hover simulates effect of project image hover
-    $.each($(".timestamp"), function(key, value) {
+    $.each($(".timestamp, .click_to_embed"), function(key, value) {
         $(value).bind("mouseenter touchstart", function(){
             equatedProject = $(".click_to_embed").eq($(value).index());
             equatedProject.children("img").eq(0).css("opacity", "0.6");
@@ -101,5 +97,11 @@ $(document).ready(function() {
         });
 
     });
+
+    $("#embeds").on("click", function() {
+        hideSite($(".embeded_site"));
+    });
+
+
 
 });
