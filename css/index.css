@@ -78,7 +78,7 @@ header {
     width: 100%;
     height: auto;
     cursor: pointer;
-    transition-duration: .3s;
+    transition-duration: .4s;
 }
 
 span.hovered_img {
