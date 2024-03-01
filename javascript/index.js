@@ -58,27 +58,9 @@ $(document).ready(function() {
 
     }
 
-    // $.each($(".click_to_embed"), function(key, value) {
-    //     $(value).bind("mouseenter touchstart", function() {
-    //         $(value).children("img").eq(0).css("opacity", "0.6");
-    //         getProjInfo($(value).index());
-    //     });
-
-    //     $(value).bind("mouseleave touchend", function() {
-    //         $(".hovered_img").remove();
-    //         $(value).children("img").eq(0).css("opacity", "1");
-    //     });
-
-    //     $(value).on("click", function() {
-    //         showSite($(value).index());
-    //         $(".hovered_img").remove();
-    //         $(value).children("img").eq(0).css("opacity", "1");
-    //     });
-    // });
-
-    // timeline hover simulates effect of project image hover
+    // hovering the image or corresponding timestamp brings up information about the project over the image
     $.each($(".timestamp, .click_to_embed"), function(key, value) {
-        $(value).bind("mouseenter touchstart", function(){
+        $(value).bind("mouseenter touchstart", function() {
             equatedProject = $(".click_to_embed").eq($(value).index());
             equatedProject.children("img").eq(0).css("opacity", "0.6");
             getProjInfo(equatedProject.index());
@@ -102,6 +84,10 @@ $(document).ready(function() {
         hideSite($(".embeded_site"));
     });
 
-
+    // $.each($(".site_more_info"), function(key, value) {
+    //     $(value).bind("click", function() {
+    //         $("#further_proj_info").css("display", "block");
+    //     });
+    // });
 
 });
