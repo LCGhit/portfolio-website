@@ -63,3 +63,15 @@ a.nav-link.disabled {
     color: white;
     text-decoration: none;
 }
+
+.carousel-item {
+    overflow-y: hidden;
+    width: 100%;
+    max-height: 50vw;
+}
+
+.card {
+    width: 100%;
+    max-height: 20vw;
+    overflow-y: hidden;
+}

@@ -34,7 +34,7 @@ session_start();
                     <li>#Portólio para inspiração</li>
                     <li>#Reunião em pessoa</li>
                 </ul>
-                <img alt="desktop and mobile screens graphics with bullet points regarding the point of the site" src="images/banner.png"/>
+                <img alt="desktop and mobile screens graphics with bullet points regarding the point of the site" src="images/banner.png">
             </div>
 
             <div class="third">
@@ -106,7 +106,6 @@ session_start();
                 <a href="https://www.instagram.com" target="blank"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://twitter.com" target="blank"><i class="fa-brands fa-twitter"></i></a>
             </footer>
-        </div>
         </div>
 
         <!-- ////////////////////USERS TAB//////////////////// -->

@@ -12,6 +12,15 @@ $(document).ready(function() {
                 var output = "<p>"+Object.keys(projInfo[n])[0]+"_ "+Object.values(projInfo[n])[0]+"</p>"+"<p>"+Object.keys(projInfo[n])[1]+"_ "+Object.values(projInfo[n])[1]+"<p/><button class=site_more_info>more info</button>";
 
                 $("<span class='hovered_img'>"+output+"</span>").insertBefore($("img.project_"+(n+1)));
+
+                // button shows more info about project
+                $.each($(".site_more_info"), function(key, value) {
+                    $(value).on("click", function() {
+                        $("#further_proj_info").css("display", "block");
+                        console.log("clicked");
+                    });
+                });
+
             }
             else if (this.status == 404) {
                 $("<span class='hovered_img'>"+"info not found"+"</span>").insertBefore($("img.project_"+(n+1)));
@@ -83,11 +92,5 @@ $(document).ready(function() {
     $("#embeds").on("click", function() {
         hideSite($(".embeded_site"));
     });
-
-    // $.each($(".site_more_info"), function(key, value) {
-    //     $(value).bind("click", function() {
-    //         $("#further_proj_info").css("display", "block");
-    //     });
-    // });
 
 });
