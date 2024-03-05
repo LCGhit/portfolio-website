@@ -16,8 +16,8 @@ $(document).ready(function() {
                 // button shows more info about project
                 $.each($(".site_more_info"), function(key, value) {
                     $(value).on("click", function() {
-                        $("#further_proj_info").css("display", "block");
-                        console.log("clicked");
+                        // $("#further_proj_info").css("display", "block");
+                        window.alert("more info coming soon");
                     });
                 });
 
