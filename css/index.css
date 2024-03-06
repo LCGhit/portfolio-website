@@ -152,6 +152,7 @@ span.hovered_img {
     justify-content: space-between;
     align-items: center;
     width: .3rem;
+    height: auto;
     margin: 0 1.5rem;
     /* padding: -.8rem; */
     background-color: rgb(234, 234, 234);
