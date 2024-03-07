@@ -16,7 +16,7 @@ $(document).ready(function() {
                 // button shows more info about project
                 $.each($(".site_more_info"), function(key, value) {
                     $(value).on("click", function() {
-                        $("#further_proj_info").css("display", "block");
+                        $("#further_proj_info").css({"display": "block", "width": "100%"});
                         // window.alert("more info coming soon");
                     });
                 });
@@ -102,7 +102,7 @@ $(document).ready(function() {
     });
 
     $("#further_proj_info").on("click", function() {
-        $("#further_proj_info").css("display", "none");
+        $("#further_proj_info").css({"display": "none", "width": "0"});
     });
 
 

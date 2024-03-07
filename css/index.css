@@ -154,7 +154,6 @@ span.hovered_img {
     width: .3rem;
     height: auto;
     margin: 0 1.5rem;
-    /* padding: -.8rem; */
     background-color: rgb(234, 234, 234);
     border-radius: 70px;
 }
@@ -177,12 +176,15 @@ span.hovered_img {
     border-color: rgb(234, 234, 234);
 }
 
-aside {
+aside#further_proj_info {
     display: none;
+    position: relative;
     width: 0;
     border-right: 1rem solid rgb(0, 173, 112);
     box-shadow: .3rem 2px 2px rgb(25, 25, 25);
     background-color: rgb(234, 234, 234);
+    transition-duration: .4s;
+    z-index: 4;
 }
 
 footer {
