@@ -152,7 +152,7 @@ span.hovered_img {
     justify-content: space-between;
     align-items: center;
     width: .3rem;
-    height: auto;
+    max-height: 80vh;
     margin: 0 1.5rem;
     background-color: rgb(234, 234, 234);
     border-radius: 70px;
@@ -176,13 +176,16 @@ span.hovered_img {
     border-color: rgb(234, 234, 234);
 }
 
-aside#further_proj_info {
-    display: none;
-    position: relative;
+#further_proj_info {
+    display: block;
+    position: absolute;
     width: 0;
-    border-right: 1rem solid rgb(0, 173, 112);
+    height: 0;
+    overflow-y: hidden;
+    visibility: hidden;
     box-shadow: .3rem 2px 2px rgb(25, 25, 25);
     background-color: rgb(234, 234, 234);
+    transition-duration: height;
     transition-duration: .4s;
     z-index: 4;
 }

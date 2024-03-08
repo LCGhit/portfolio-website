@@ -30,16 +30,9 @@
                 <button class="timestamp"></button>
             </div>
             <article>
-
+                <aside id="further_proj_info"></aside>
                 <div id="embed_site">
-                    <div class="click_to_embed"><img class="project_1" alt="pure html and css based website with literary guessing game" src="images/caso_pratico_html_css.png"/>
-                        <aside id="further_proj_info">
-                            Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum, odio eu! Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh?
-                            Risus sed vulputate odio ut enim blandit volutpat? Tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus?
-                            Eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor, at auctor urna nunc id. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc, consequat interdum.
-                            Sit amet purus gravida quis blandit turpis. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa, eget egestas purus viverra accumsan in nisl nisi, scelerisque eu ultrices vitae.
-                        </aside>
-                    </div>
+                    <div class="click_to_embed"><img class="project_1" alt="pure html and css based website with literary guessing game" src="images/caso_pratico_html_css.png"/></div>
                     <div class="click_to_embed"><img class="project_2" alt="a music band webpage based on bootstrap" src="images/caso_pratico_bootstrap.png"/></div>
                     <div class="click_to_embed"><img class="project_3" alt="web developer services website incorporating javascript" src="images/caso_pratico_js_2.png"/></div>
                     <div class="click_to_embed"><img class="project_4" alt="dynamic website about movies incorporating javascript" src="images/caso_pratico_js.png"/></div>

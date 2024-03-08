@@ -9,15 +9,19 @@ $(document).ready(function() {
             if(this.status == 200) {
                 var projInfo = JSON.parse(this.responseText);
                 $(".hovered_img").remove();
-                var output = "<p>"+Object.keys(projInfo[n])[0]+"_ "+Object.values(projInfo[n])[0]+"</p>"+"<p>"+Object.keys(projInfo[n])[1]+"_ "+Object.values(projInfo[n])[1]+"<p/><button class=site_more_info>more info</button>";
+                var projectNumber = Object.keys(projInfo[n])[0]+"_ "+Object.values(projInfo[n])[0];
+                var projectTech = Object.keys(projInfo[n])[1]+"_ "+Object.values(projInfo[n])[1];
+                var output = "<p>"+projectNumber+"</p>"+"<p>"+projectTech+"<p/><button class=site_more_info>more info</button>";
 
                 $("<span class='hovered_img'>"+output+"</span>").insertBefore($("img.project_"+(n+1)));
 
                 // button shows more info about project
                 $.each($(".site_more_info"), function(key, value) {
                     $(value).on("click", function() {
-                        $("#further_proj_info").css({"display": "block", "width": "100%"});
-                        // window.alert("more info coming soon");
+                        $("#further_proj_info").children().first().remove();
+                        $("#further_proj_info").css({"height": "0", "width": "0", "visibility": "hidden"});
+                        $("#further_proj_info").css({"height": "auto", "width": "100%", "visibility": "visible"});
+                        $("#further_proj_info").append("<p>"+projectTech+"</p>");
                     });
                 });
 
@@ -83,7 +87,6 @@ $(document).ready(function() {
         $(value).on("click", function(e) {
             // if button is clicked, only sidebar with info is shown
             if($(e.target).is(".site_more_info")) {
-                console.log("TRUE");
                 e.preventDefault();
             }
             else {
@@ -102,7 +105,7 @@ $(document).ready(function() {
     });
 
     $("#further_proj_info").on("click", function() {
-        $("#further_proj_info").css({"display": "none", "width": "0"});
+        $("#further_proj_info").css({"height": "0", "width": "0", "visibility": "hidden"});
     });
 
 
