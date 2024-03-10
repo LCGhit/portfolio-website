@@ -81,7 +81,7 @@ header {
     transition-duration: .4s;
 }
 
-span.hovered_img {
+.hovered_img {
     cursor: pointer;
     display: flex;
     flex-direction: column;
